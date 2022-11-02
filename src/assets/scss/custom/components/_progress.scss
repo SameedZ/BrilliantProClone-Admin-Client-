@@ -1,0 +1,87 @@
+// 
+// _progress.scss
+// 
+
+// Progress height small
+.progress-sm {
+  height: 5px;
+}
+
+
+// Progress height medium
+.progress-md {
+  height: 8px;
+}
+
+
+// Progress height large
+.progress-lg {
+  height: 12px;
+}
+
+// Progress height Extra large
+.progress-xl {
+  height: 16px;
+}
+
+.animated-progess{
+  position: relative;
+  .progress-bar {
+    position: relative;
+    border-radius: 6px;
+    animation: animate-positive 2s;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+      width: 0;
+  }
+}
+
+// custom-progress-bar
+
+.progress {
+  &.custom-progress-bar {
+    overflow: visible;
+    .progress-bar {
+      position: relative;
+      overflow: visible;
+      border-radius: 6px;
+      animation: animate-positive 2s;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        right: -8px;
+        border-radius: 50%;
+        border: 2px solid;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        background-color: $gray-300;
+        right: 0px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .custom-progress-bar {
+    .progress-bar {
+      &.bg-#{$color} {
+        &:before {
+          border-color: rgba($value, .65);
+        }
+        &:after {
+          box-shadow: 0 0 0 3px rgba($value, 1);
+        }
+      }
+    }
+  }
+}

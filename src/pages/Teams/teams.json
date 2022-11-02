@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Graphics Design",
+        "teamMembers" : "John, Jane, Jack",
+        "Projects" : "Project 1, Project 2, Project 3"
+    },
+    {
+        "name":"FrontEnd Development",
+        "teamMembers" : "John, Jane, Jack",
+        "Projects" : "Project 4, Project 5, Project 6"
+    },
+    {
+        "name":"BackendEnd Developement",
+        "teamMembers" : "John, Jane, Jack",
+        "Projects" : "Project 7, Project 8, Project 9"
+    }
+]

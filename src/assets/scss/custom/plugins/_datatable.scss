@@ -1,0 +1,20 @@
+
+
+/* 
+Datatable
+*/
+
+.table-bordered {
+  border: $table-border-width solid $table-border-color;
+}
+
+
+div.dataTables_wrapper {
+  div.dataTables_filter{
+    text-align: right;
+    input{
+      margin-left: 0.5em;
+      margin-right: 0;
+    }
+  }
+}

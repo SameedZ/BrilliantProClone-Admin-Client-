@@ -1,0 +1,87 @@
+//
+// components-rtl.scss
+//
+
+// dropdown
+
+.dropdown-megamenu {
+  &.show {
+    left: 20px !important;
+  }
+}
+
+// icons
+
+.icon-list-demo {
+  i {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
+
+// Breadcrumb
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+
+// Invoice
+
+@media print {
+  .content-page,
+  .content,
+  body {
+    margin-right: 0;
+  }
+}
+
+// Demos button
+.demos-show-btn {
+  left: 0;
+  right: auto;
+  border-radius: 0 6px 6px 0;
+}
+
+// widget
+
+.inbox-wid {
+  .inbox-item {
+    .inbox-item-date {
+      right: auto;
+      left: 7px;
+    }
+  }
+}
+
+.widget-user {
+  .widget-user-desc:after {
+    left: auto;
+    right: 18px;
+    border-left-color: $primary;
+    border-right-color: transparent;
+  }
+}
+
+.activity-feed {
+  .feed-item {
+    padding-left: 0px;
+    padding-right: 30px;
+    border-left: transparent;
+    border-right: 2px solid lighten($gray-200, 4%);
+    &::after {
+      left: auto;
+      right: -10px;
+    }
+
+    .feed-item-list {
+      &:after {
+        left: auto;
+        right: 19px;
+        border-right-color: transparent;
+        border-left-color: $gray-100;
+      }
+    }
+  }
+}

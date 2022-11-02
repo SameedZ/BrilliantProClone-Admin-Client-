@@ -1,0 +1,68 @@
+// 
+// Page-title
+// 
+
+.page-title-box {
+    padding-bottom: $grid-gutter-width;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 18px !important;
+    }
+}
+
+.state-information{
+    .state-graph{
+    float: right;
+    margin-left: 40px;
+    text-align: center;
+        .info{
+            font-size: 12px;
+            margin-top: 3px;
+        }
+    }
+}  
+
+
+
+body[data-layout="horizontal"] {
+    .top-navigation{
+        padding: 0 calc(24px / 2) 0 calc(24px / 2);
+    }
+
+    .state-information{
+        .state-graph{
+            .info{
+                color: $gray-500;
+            }
+        }
+    }  
+    
+    .page-title-content {
+        padding: 20px 0;
+        .page-title-box {
+            padding-bottom: 0;
+            .breadcrumb-item {
+                > a {
+                    color: $gray-400;
+                }
+                +.breadcrumb-item {
+                    &::before {
+                        color:  rgba($white, 0.5);
+                    }
+                }
+                &.active {
+                    color: $gray-500;
+                  }
+            }
+        }
+        h4 {
+            color: $white;
+        }
+    }
+}
+

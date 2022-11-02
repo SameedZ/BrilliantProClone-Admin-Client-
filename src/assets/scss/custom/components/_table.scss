@@ -1,0 +1,53 @@
+// 
+// _table.scss
+// 
+
+
+.table {
+  th {
+      font-weight: $font-weight-bold;
+  }
+  .table-light{
+    color: $body-color;
+    border-color: $table-border-color;
+    background-color: $table-head-bg;
+      
+  }
+}
+
+
+.table>:not(caption)>*>*{
+  border-bottom-width: 0px;
+  border-top-width: $table-border-width;;
+}
+
+.table>:not(:last-child)>:last-child>*{
+  border-bottom-color:  $table-border-color;
+}
+
+.table-dark>:not(:last-child)>:last-child>*{
+  border-bottom-color:  $table-dark-border-color;
+}
+
+.table-nowrap {
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+//Table centered
+.table-centered {
+  td,th {
+      vertical-align: middle !important;
+  }
+}
+
+// table card list
+
+.table-card-list{
+  border-collapse:separate; 
+  border-spacing:0 12px; 
+  tr{
+    background-color: $card-bg;
+  }
+}

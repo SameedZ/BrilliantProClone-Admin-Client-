@@ -1,0 +1,138 @@
+// 
+// Widgets.scss
+// 
+
+/* ==============
+  Widgets
+===================*/
+
+.widget-chart li {
+    width: 31.5%;
+    display: inline-block;
+    padding: 0;
+    i {
+        font-size: 22px;
+    }
+}
+
+.mini-stat {
+    border: none;
+    .mini-stat-img {
+        background: url(../../../../assets/images/bg-1.png);
+        background-size: cover;
+    }
+    .mini-stat-icon {
+        i {
+            font-size: 30px;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            color: $white !important;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+        }
+    }
+}
+
+// inbox widget
+.inbox-wid {
+    .inbox-item {
+        position: relative;
+        border-bottom: 1px solid lighten($gray-200, 2%);
+        overflow: hidden;
+        padding: 10px 0;
+        
+        .inbox-item-date {
+            font-size: 11px;
+            position: absolute;
+            right: 7px;
+            top: 8px;
+        }
+    }
+}
+
+.widget-user {
+    overflow: hidden;
+    .widget-user-desc {
+        &:after {
+            left: 18px;
+            bottom: -20px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-top-color: $primary;
+            border-width: 10px;
+            margin-left: -1px;
+            border-right-color: $primary;
+        }
+    }
+}
+
+
+/* Activity */
+.activity-feed {
+    padding: 15px 15px 0 15px;
+    list-style: none;
+  
+    .feed-item {
+      position: relative;
+      padding-bottom: 29px;
+      padding-left: 30px;
+      border-left: 2px solid lighten($gray-200, 4%);
+  
+      &:last-child {
+        border-color: transparent;
+      }
+  
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 16px;
+        height: 10px;
+        border-radius: 6px;
+        background: $white;
+        border: 4px solid $primary;
+      }
+  
+      .feed-item-list{
+        padding: 12px 20px;
+        border-radius: 7px;
+        background: $gray-100;
+        &::after{
+          left: 19px;
+          top: 0;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-top-color: $gray-100;
+          border-width: 10px;
+          margin-left: -1px;
+          border-right-color: $gray-100;
+        }
+      }
+  
+      .date {
+        display: block;
+        position: relative;
+        top: -5px;
+        color: #8c96a3;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+      .activity-text {
+        position: relative;
+        top: -3px;
+      }
+    }
+  }

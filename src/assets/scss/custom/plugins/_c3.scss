@@ -1,0 +1,45 @@
+//
+// c3.scss
+//
+
+
+.c3-tooltip {
+    box-shadow: $box-shadow-lg;
+    opacity: 1;
+    td {
+        border-left: none;
+        >span {
+            background: $dark;
+        }
+    }
+    tr {
+        border: none !important;
+    }    
+    th {
+        background-color: $dark;
+        color: $gray-100;
+    }
+}
+
+.c3-chart-arcs-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.c3 {
+    text {
+        fill: $gray-500;
+    }
+    line, path{
+        stroke: $gray-400;
+    }
+}
+.c3-legend-item {
+    font-size: 14px;
+}
+.c3 line, .c3 path {
+    stroke: $gray-400;
+}
+.c3-chart-arc.c3-target g path {
+    stroke: $white;
+}

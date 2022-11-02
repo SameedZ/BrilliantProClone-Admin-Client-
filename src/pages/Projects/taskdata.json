@@ -1,0 +1,26 @@
+[
+    {
+        "name":"AAA Company",
+        "type":"RealEstate",
+        "description":"This is a description of the company",
+        "priority":"high",
+        "deadline":"12/12/22",
+        "teamMembers" : "John, Jane, Jack"
+    },
+    {
+        "name":"ABC Company",
+        "type":"RealEstate",
+        "description":"This is a description of the company",
+        "priority":"high",
+        "deadline":"12/12/22",
+        "teamMembers" : "John, Jane, Jack"
+    },
+    {
+        "name":"ABD Company",
+        "type":"RealEstate",
+        "description":"This is a description of the company",
+        "priority":"high",
+        "deadline":"12/12/22",
+        "teamMembers" : "John, Jane, Jack"
+    }
+]

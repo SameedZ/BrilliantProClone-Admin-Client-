@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Create Mockups",
+        "priority":"Medium",
+        "deadline":"2019-10-10",
+        "timeSpent": "2 days",
+        "status":"In Progress",
+        "teamMembers" : "John, Jane, Jack"
+    },
+    {
+        "name":"Integrate UI with Express Server",
+        "priority":"High",
+        "deadline":"2019-10-10",
+        "timeSpent": "2 days",
+        "status":"In Progress",
+        "teamMembers" : "John, Jane, Jack"
+    },
+    {
+        "name":"Create Poster",
+        "priority":"Small",
+        "deadline":"2019-10-10",
+        "timeSpent": "1 days",
+        "status":"Completed",
+        "teamMembers" : "John, Jane, Jack"
+    }
+]
